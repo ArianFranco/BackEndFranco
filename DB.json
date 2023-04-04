@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Skin Epica",
+        "description": "Skin aleatoria de 1350RP",
+        "price": 500,
+        "thumbnail": "link",
+        "code": "001",
+        "stock": 100
+      },
+      {
+        "id": 2,
+        "title": "Skin Legendaria",
+        "description": "Skin aleatoria de 1800RP",
+        "price": 1000,
+        "thumbnail": "link",
+        "code": "002",
+        "stock": 200
+      },
+      {
+        "id": 3,
+        "title": "Skin Definitiva",
+        "description": "Skin aleatoria de 3200RP",
+        "price": 2000,
+        "thumbnail": "link",
+        "code": "003",
+        "stock": 300
+      }
+]
