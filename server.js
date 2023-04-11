@@ -47,6 +47,8 @@ app.get("/api/productos/:pid", async (req, res)=>{
 
 
 
-app.listen(port, ()=>{
-    console.log()
+app.listen(port, () => {
+
+    console.log(`server listen ${port}`)
+
 })
