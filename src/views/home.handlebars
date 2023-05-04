@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos</title>
+</head>
+<body>
+    <h1>Lista de productos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each productos}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img src="{{this.thumbnail}}" alt="imagen producto" width="50"></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <form action="/productos" method="POST">
+        <label for="title">Nombre:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price" required>
+        <label for="thumbnail">Foto (url):</label>
+        <input type="text" id="thumbnail" name="thumbnail" required>
+        <button type="submit">Agregar producto</button>
+    </form>
+</body>
+</html>
